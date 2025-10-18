@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job - Jobortunity</title>
+  <!-- Google font start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <!-- Google font end -->
+
+  <!-- Font awwsome cdn start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awwsome cdn end -->
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/navbar.css">
+  <style>
+    .form-section {
+      padding: 80px 0;
+      background-color: #fef8ff;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-family: var(--secondary-font);
+      font-weight: 600;
+      color: var(--primary-clr);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #f1f1f1;
+      border-radius: 4px;
+      font-family: var(--secondary-font);
+      font-size: 16px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #00b8ef;
+    }
+
+    .form-group textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: #00b8ef;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--secondary-font);
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #0099cc;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="line"></div>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/image/jobortunity.png" alt="Jobortunity logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-job.html">Find a Job</a></li>
+        <li><a href="post-job.html">Post a Job +</a></li>
+        <li><a href="employers.html">Employers</a></li>
+        <li><a href="candidates.html">Candidates</a></li>
+      </ul>
+
+      <a class="desktop-login" href="login.html">Signup/Login</a>
+
+      <button class="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="mobile-menu">
+        <button class="close-btn">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-job.html">Find a Job</a></li>
+          <li><a href="post-job.html">Post a Job +</a></li>
+          <li><a href="employers.html">Employers</a></li>
+          <li><a href="candidates.html">Candidates</a></li>
+        </ul>
+        <a class="mobile-login" href="login.html">Signup/Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="contains">
+          <h1>Post Your Job Opening</h1>
+          <p>Reach thousands of qualified candidates by posting your job opportunity on our platform. Fill out
+            the form below to get started.</p>
+        </div>
+        <div class="img">
+          <img src="./assets/image/practice2.png" alt="not found">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <div class="header" style="text-align: center; margin-bottom: 40px;">
+          <h1 style="font-family: var(--primary-font); color: var(--primary-clr); font-size: 28px; position: relative;">
+            Job Details</h1>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" placeholder="e.g. Senior Web Developer" required>
+          </div>
+
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" placeholder="Your company name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="jobCategory">Job Category</label>
+            <select id="jobCategory" name="jobCategory" required>
+              <option value="">Select a category</option>
+              <option value="graphic-design">Graphic Design</option>
+              <option value="web-design">Web Design</option>
+              <option value="web-development">Web Development</option>
+              <option value="teaching">Teacher & Mentor</option>
+              <option value="accounts-finance">Accounts & Finance</option>
+              <option value="content-writing">Content Writing</option>
+              <option value="telecommunication">Telecommunication</option>
+              <option value="healthcare">Healthcare</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="e.g. New York, NY" required>
+          </div>
+
+          <div class="form-group">
+            <label for="salary">Salary Range</label>
+            <input type="text" id="salary" name="salary" placeholder="e.g. $50,000 - $70,000/year" required>
+          </div>
+
+          <div class="form-group">
+            <label for="jobType">Job Type</label>
+            <select id="jobType" name="jobType" required>
+              <option value="">Select job type</option>
+              <option value="full-time">Full Time</option>
+              <option value="part-time">Part Time</option>
+              <option value="contract">Contract</option>
+              <option value="remote">Remote</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" name="jobDescription"
+              placeholder="Describe the job responsibilities, requirements, and qualifications..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="requirements">Requirements</label>
+            <textarea id="requirements" name="requirements"
+              placeholder="List the required skills, experience, and qualifications..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="recruiter@company.com" required>
+          </div>
+
+          <div style="text-align: center; margin-top: 30px;">
+            <a class="btn" href="post-job.html" type="submit">Post Job</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="overlay">
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/image/jobortunity-2.png" alt="not found">
+        </div>
+        <div class="row">
+          <div class="footer-box1">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="footer-box2">
+            <h2>For Canditates</h2>
+            <li>--- Browse Jobs</li>
+            <li>--- User Dashboard</li>
+            <li style=" color: #00b8ef;">------ Submit Resume</li>
+            <li>--- My Bookmarks</li>
+            <li>--- Job Alerts</li>
+          </div>
+          <div class="footer-box3">
+            <h2>For Employees</h2>
+            <li>--- Browse Candidates</li>
+            <li>--- User Dashboard</li>
+            <li>--- Resume Page</li>
+            <li style=" color: #00b8ef;">------ Post a Job</li>
+            <li>--- My Bookmarks</li>
+          </div>
+          <div class="footer-box4">
+            <h2>Subscribe for Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div class="input-1">
+              <div class="input">
+                <input type="email" placeholder="Your e-mail here">
+              </div>
+              <a class="btn" style="width: fit-content;" href="#">Subscribe</a>
+            </div>
+
+            <div class="row">
+              <div class="facebook">
+                <a target="_blank" href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+              </div>
+
+              <div class="twiter">
+                <a target="_blank" href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
+              </div>
+
+              <div class="website">
+                <a target="_blank" href="#"><i class="fa-brands fa-behance"></i></span></a>
+              </div>
+
+              <div class="linckdin">
+                <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signature">
+          <p>© Copyright 2019. All rights reserved by Designer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/js/navbar.js"></script>
+
+</body>
+
+</html>
