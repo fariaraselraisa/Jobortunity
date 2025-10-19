@@ -152,7 +152,7 @@ nav .mobile-menu .mobile-login {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 914px) {
   nav .container {
     padding: 15px 20px;
   }
