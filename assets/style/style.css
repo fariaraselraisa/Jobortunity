@@ -538,7 +538,7 @@ p, a {
   }
 
   footer .container .row {
-    flex-direction: column;
+    flex-direction: row;
     gap: 40px;
   }
 
@@ -1074,7 +1074,6 @@ footer .container .row {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
 }
 
 footer .container .row .footer-box1 {
